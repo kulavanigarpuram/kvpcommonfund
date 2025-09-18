@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Common Fund – Transactions Tracker</title>
+  <title>குலவணிகர்புரம் Common Fund – Transactions Tracker</title>
   <style>
     body {
       margin: 0;
@@ -87,10 +87,13 @@
       }
 
       td:nth-of-type(1)::before { content: "Event"; }
-      td:nth-of-type(2)::before { content: "Income"; }
-      td:nth-of-type(3)::before { content: "Expense"; }
-      td:nth-of-type(4)::before { content: "Balance"; }
-      td:nth-of-type(5)::before { content: "Details"; }
+      td:nth-of-type(2)::before { content: "CASH வருமானம்"; }
+      td:nth-of-type(3)::before { content: "BANK வருமானம்"; }
+      td:nth-of-type(4)::before { content: "மொத்தம் வருமானம்"; }
+      td:nth-of-type(5)::before { content: "செலவு Expense"; }
+      td:nth-of-type(6)::before { content: "மீதி Balance"; }
+      td:nth-of-type(7)::before { content: "Details"; }
+
     }
      a.btn {
       display: inline-block;
@@ -114,7 +117,9 @@
   <div class="container">
     <h1>குலவணிகர்புரம் பொது நிதி – Transaction Tracker</h1>
     <p>📅 Updated regularly with event-wise income and expenses</p>
-
+	  <marquee direction="left" scrollamount="6" style="background-color:#000; color: #fff; padding: 10px; font-size: 1.2rem; font-weight: bold;">
+  🤝 UNITY IS STRENGTH – TOGETHER, WE RISE! 🤝🤝 ஒருமைப்பாடு சக்தி! ஒன்றிணைந்து நாமே வெல்வோம்! 🤝
+</marquee>
     <table>
       <thead>
         <tr>
@@ -122,9 +127,9 @@
 	       <th>CASH Income(₹)</th>
 	        <th>BANK Income (₹)</th>
 	        <th>Income வருமானம் (₹)</th>
-          <th>Expense செலவு(₹)</th>
-          <th>Balance மீதி(₹)</th>
-          <th>Details விவரங்கள்</th>
+            <th>Expense செலவு(₹)</th>
+            <th>Balance மீதி(₹)</th>
+            <th>Details விவரங்கள்</th>
         </tr>
       </thead>
       <tbody>
